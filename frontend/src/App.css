@@ -1,0 +1,138 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(45deg, #00796b, #004d40); /* Gradient effect */
+  -webkit-background-clip: text;
+  color: transparent;
+  padding: 10px 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  border: 2px solid #004d40;
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p{
+  color: #00796b;
+  font-size: larger;
+}
+
+/* Container for Password Input Form */
+.AddingPassword {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  width: 90%;
+  max-width: 550px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.AddingPassword:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Title Inside Form */
+.AddingPassword h2 {
+  font-size: 28px;
+  color: #00796b;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Input and Button Styling */
+.AddingPassword input,
+.AddingPassword button {
+  width: 100%;
+  max-width: 400px;
+  height: 50px;
+  margin: 12px 0;
+  padding: 0 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #00796b;
+  transition: all 0.3s ease;
+}
+
+.AddingPassword input {
+  background-color: #f7f7f7;
+}
+
+.AddingPassword input:focus {
+  outline: none;
+  border-color: #004d40;
+  box-shadow: 0 0 8px rgba(0, 77, 64, 0.3);
+}
+
+.AddingPassword button {
+  background-color: #00796b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.AddingPassword button:hover {
+  background-color: #004d40;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Add some spacing for better layout */
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .AddingPassword {
+    width: 100%;
+    padding: 20px;
+  }
+}
